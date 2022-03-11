@@ -205,24 +205,7 @@ def duplication_detection():
 
 if __name__ == "__main__":
     
-    # rootdir = pathlib.Path().resolve() 
-    # test = os.listdir(rootdir)
-
-    # for item in test:
-    #     if item.endswith(".json"):
-    #         os.remove(os.path.join(rootdir, item))
-    # sys.exit()
-
-    #I think it will be nice to add arguments when invoking the python program in the CLI, where we can specify which two jQuery version we want to 
-    #compare, or a range of jQuery versions and etc. 
-
-    # rootdir = pathlib.Path().resolve() 
-    # test = os.listdir(rootdir)
-
-    # for item in test:
-    #     if item.endswith(".json"):
-    #         os.remove(os.path.join(rootdir, item))
-
+  
 
     parser = argparse.ArgumentParser(description='Discovering similarity between jQuery versions.',
                                     argument_default=argparse.SUPPRESS,
