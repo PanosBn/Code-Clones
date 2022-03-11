@@ -23,31 +23,40 @@ such that you can copy out files from the container.
 When the container is running you can execute bash commands
 as if it is a virtual machine. 
 
+## ⚙️ How:
+
 # To compare a range of jQuery versions
+```
 python main.py -v -r -start "1.7" -end "3.4.0" -loc -dup_detect
 
--v -> enables printing in the CLI 
+arguments:
+    -v -> enables printing in the CLI 
 
--r -> indicates we want a range <REQUIRED>
+    -r -> indicates we want a range <REQUIRED>
 
--start "version" -> first version in range <REQUIRED>
+    -start "version" -> first version in range <REQUIRED>
 
--end "version" -> last version in range  <REQUIRED>
+    -end "version" -> last version in range  <REQUIRED>
 
--loc -> count lines of code <REQUIRED>
+    -loc -> count lines of code <REQUIRED>
 
--dup_detect -> versions will be checked for duplicates <REQUIRED>
+    -dup_detect -> versions will be checked for duplicates <REQUIRED>
+
+```
 
 # To compare only a pair of versions
+```
 python main.py -v -p -start "version" -end "version" -loc -dup_detect
 
--p -> indicates that only two versions will be compared <REQUIRED>
+arguments:
+    -p -> indicates that only two versions will be compared <REQUIRED>
 
--start "version" -> first version in range <REQUIRED>
+    -start "version" -> first version in range <REQUIRED>
 
--end "version" -> last version in range  <REQUIRED>
+    -end "version" -> last version in range  <REQUIRED>
 
--loc -> count lines of code <REQUIRED>
+    -loc -> count lines of code <REQUIRED>
 
--dup_detect -> versions will be checked for duplicates <REQUIRED>
+    -dup_detect -> versions will be checked for duplicates <REQUIRED>
 
+```
